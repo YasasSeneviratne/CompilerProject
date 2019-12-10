@@ -1,0 +1,10 @@
+This implementation was done using llvm-7.0.0
+Download llvm-7.0.0 src code from http://releases.llvm.org/download.html
+copy Project folder to <llvm-7.0.0.src>/lib/Analysis/Project
+add line "add_subdirectory(Project)" to <llvm-7.0.0.src>/lib/Analysis/CMakeLists.txt
+build llvm
+
+cd into samplePrograms
+change "llvm_path" variable in Makefile to show llvm-src path
+run using "make file=<ll or bc file> run"
+
